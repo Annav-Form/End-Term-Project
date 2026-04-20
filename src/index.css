@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply bg-[#09090b] text-zinc-300 antialiased selection:bg-violet-500/30 selection:text-violet-200;
+  }
+
+  /* Custom Scrollbar for a premium feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full border-2 border-[#09090b];
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-700;
+  }
+}
