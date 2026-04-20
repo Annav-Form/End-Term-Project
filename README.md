@@ -1,18 +1,41 @@
-# React + Vite
+# End-Term-Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite application for managing Codeforces-related content, built with Firebase authentication and Firestore-backed user data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Firebase authentication
+- User data stored in Firestore
+- Explorer page
+- Bookmarks page
+- Dashboard page
+- State management with Zustand
+- Data fetching with TanStack Query
+- Routing with React Router
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- Vite
+- Firebase
+- React Router
+- Zustand
+- TanStack Query
+- Axios
 
-Note: This will impact Vite dev & build performances.
+## Project Structure
 
-## Expanding the ESLint configuration
+- `src/pages/` — main pages like Explorer, Bookmarks, Dashboard, Home, Landing, and Problems
+- `src/components/` — reusable UI components
+- `src/store/` — global app state
+- `src/services/` — API/service logic
+- `src/api/` — API helpers
+- `src/firebase.js` — Firebase setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+git clone <repo-url>
+cd End-Term-Project
+npm install
+npm run dev
